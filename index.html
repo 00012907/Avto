@@ -11,6 +11,8 @@
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -95,29 +97,83 @@
         </div>
     </header>
 
+    <!-- Swiper -->
+
     <!-- main -->
         <main>
             <h1 class="headline">Облако решений для профессионалов в запчастях и ремонте авто</h1>
             <div class="container">
-                <div class="top">
-                    <div class="text">
-                        <h1>Запчасти с безусловным возвратом, новые и Б/У</h1>
-                        <ul>
-                            <li>82 млн артикулов</li>
-                            <li>5 000+ брендов</li>
-                            <li>20 лет на рынке России и СНГ</li>
-                        </ul>
-                        <a href="#">Зарегистрироваться</a>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="top">
+                            <div class="text">
+                                <h1>Запчасти с безусловным возвратом, новые и Б/У</h1>
+                                <ul>
+                                    <li>82 млн артикулов</li>
+                                    <li>5 000+ брендов</li>
+                                    <li>20 лет на рынке России и СНГ</li>
+                                </ul>
+                                <a href="#">Зарегистрироваться</a>
+                            </div>
+                            <div class="pic">
+                                <img src="./Images/car-disc-brake-royalty-free-stock-photography-png-favpng-Rj3a8AqnjWhJXathVBpcJMtxZ 2.png" alt="">
+                            </div>
+                        </div> 
+                        <hr>
+                        <div class="btns">
+                            <a href="#" class="details">Запчасти</a>
+                            <a href="#">Академия</a>
+                            <a href="#">Бизнес сервисы</a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="top">
+                            <div class="text">
+                                <h1>Платформа для производителей и продавцов</h1>
+                                <ul>
+                                    <li>82 млн артикулов</li>
+                                    <li>5 000+ брендов</li>
+                                    <li>20 лет на рынке России и СНГ</li>
+                                </ul>
+                                <a href="#">Зарегистрироваться</a>
+                            </div>
+                            <div class="pic">
+                                <img src="./Images/Frame 8869.png" alt="">
+                            </div>
+                        </div> 
+                        <hr>
+                        <div class="btns">
+                            <a href="#" class="details">Запчасти</a>
+                            <a href="#">Академия</a>
+                            <a href="#">Бизнес сервисы</a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="top">
+                            <div class="text">
+                                <h1>Платформа для производителей и продавцов</h1>
+                                <ul>
+                                    <li>82 млн артикулов</li>
+                                    <li>5 000+ брендов</li>
+                                    <li>20 лет на рынке России и СНГ</li>
+                                </ul>
+                                <a href="#">Зарегистрироваться</a>
+                            </div>
+                            <div class="pic">
+                                <img src="./Images/Коробки.png" alt="">
+                            </div>
+                        </div> 
+                        <hr>
+                        <div class="btns">
+                            <a href="#" class="details">Запчасти</a>
+                            <a href="#">Академия</a>
+                            <a href="#">Бизнес сервисы</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="pic">
-                        <img src="./Images/car-disc-brake-royalty-free-stock-photography-png-favpng-Rj3a8AqnjWhJXathVBpcJMtxZ 2.png" alt="">
-                    </div>
-                </div> 
-                <hr>
-                <div class="btns">
-                    <a href="#" class="details">Запчасти</a>
-                    <a href="#">Академия</a>
-                    <a href="#">Бизнес сервисы</a>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </main> 
@@ -212,13 +268,21 @@
                     <img src="./Images/лого.png" alt="">
                 </div>
                 <div class="media">
-                    <i class="fi fi-brands-twitter"></i>
-                    <i class="fi fi-brands-facebook"></i>
-                    <i class="fi fi-brands-instagram"></i>
+                    <a href="#">
+                        <i class="fi fi-brands-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fi fi-brands-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fi fi-brands-instagram"></i>
+                    </a>
                 </div>
                 <div class="address">
-                    <i class="fi fi-sr-marker"></i>
-                    <span>Адрес</span>
+                    <div class="address-icon">
+                        <i class="fi fi-sr-marker"></i>
+                        <span>Адрес</span>
+                    </div>
                     <p>111141, г. Москва, 3-й проезд Перова Поля, д. 8, стр. 1</p>
                 </div>
                 <a href="#" class="phone">
@@ -281,10 +345,18 @@
 
 
 
-    <!-- slider js -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <script src="./CSS/index.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 </body>
 </html>
